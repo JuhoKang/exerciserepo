@@ -9,7 +9,7 @@ public class BasicAnalyzer implements Analyzer{
 	public Map<String, Integer> countWords(String input) {
 		
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
-		String [] strArray = input.split(" ");
+		String [] strArray = input.split("/");
 		
 		for(int i = 0; i < strArray.length; i++ ){
 			if(!map.containsKey(strArray[i])){
