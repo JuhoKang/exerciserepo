@@ -19,7 +19,7 @@ public class AnalyzerTest {
 	@Test
 	public void 단어세기_BasicAnalyzer_결과맵으로(){
 		Analyzer analyzer = new BasicAnalyzer();
-		String input = "apple apple grape grape grape pineapple";
+		String input = "apple/apple/grape/grape/grape/pineapple";
 		Map<String,Integer> result = analyzer.countWords(input);
 		assertEquals(2, result.get("apple").intValue());
 		assertEquals(3, result.get("grape").intValue());
